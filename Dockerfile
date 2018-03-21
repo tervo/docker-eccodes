@@ -19,6 +19,8 @@ RUN make
 RUN make install
 RUN rm -R /tmp/eccodes
 
+RUN pip install https://software.ecmwf.int/wiki/download/attachments/56664858/ecmwf-api-client-python.tgz
+
 ENV LANG en_US.UTF-8  
 ENV LANGUAGE en_US:en
 # ENV LC_ALL en_US.UTF-8
